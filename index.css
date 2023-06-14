@@ -1,0 +1,124 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+:root{
+    --primary-color:#272727;
+    --secondary-color:#100f0f8d;
+    --light-color:#ffffff;
+    --red-color:#611414;
+    --orange-dark-color:#FFBD59;
+    --yellow-color:#FFE400;
+    --green-color:#14A76C;
+    --shadow-black:rgba(0, 0, 0, 0.5);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  *{
+    margin: 0px;
+    padding:0;
+  }
+
+  html{
+    height:100%;
+  }
+
+  body{
+    height:100% ;
+    background-color: var(--red-color);
+    color: var(--light-color);
+    font-family: 'Oswald', sans-serif;
+  }
+
+  ul{
+    list-style-type:none;
+  }
+
+  a{
+    text-decoration: none;
+    color:white;
+    text-shadow: 2px 3px black;
+  } 
+
+  i{
+    color: var(--light-color);
+    cursor:pointer;
+  }
+
+  img,video{
+    max-width: 100%;
+    height: auto;
+}
+
+h1,h2,h3{
+    line-height:1.2;
+}
+
+
+p{
+    font-weight: 500;
+}
+
+
+h2, ul, li {
+    -webkit-touch-callout: none; /* Disable iOS touch callout */
+    -webkit-user-select: none; /* Disable text selection in webkit browsers */
+    -moz-user-select: none; /* Disable text selection in Firefox */
+    -ms-user-select: none; /* Disable text selection in Internet Explorer/Edge */
+    user-select: none; /* Disable text selection in other browsers */
+  }
+
+  /*Navigation*/
+  .navigation{
+    height:100px
+  }
+
+  .navigation .navbar{
+    justify-content: flex-start;
+  }
+
+
+  /*Section one*/
+  .section-one{
+    height:auto;
+    margin:10px 0;
+  }
+
+  .section-one .container{
+   justify-content: space-between;
+   align-items: flex-start;
+  }
+
+  .section-one .container .first-box{
+    flex-basis:65%;
+    flex-shrink:1;
+  }
+
+  .section-one .container .second-box{
+    flex-basis:30%;
+    flex-shrink:0;
+    background-color: var(--secondary-color);
+  }
+
+  .second-box .block-of-elements .element h2{
+    font-size:2.2rem;
+    padding:9px 12px;
+  }
+
+  /*Footer*/
+  footer{
+    height:auto;
+    justify-content: space-between;
+    background-color: rgb(88, 31, 31);
+  }
+
+  .footer .container{
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 0;
+    flex-wrap:wrap;
+  }
+
